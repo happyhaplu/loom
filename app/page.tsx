@@ -24,14 +24,14 @@ export default function HomePage() {
         <div className="relative mx-auto w-full max-w-3xl px-6 pb-12 pt-14 text-center md:pt-20">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/80 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur-sm">
             <LoomMark className="size-3.5 text-primary" />
-            Forge — the AI app builder
+            Loom — the AI app builder
           </span>
           <h1 className="mt-5 text-balance font-display text-4xl font-semibold tracking-tight md:text-5xl">
             From a sentence to a shipped app
           </h1>
           <p className="mx-auto mt-2.5 max-w-xl text-pretty text-muted-foreground md:text-lg">
-            Describe what you have in mind. Forge plans it, writes the code, and
-            builds you a working preview you can keep shaping.
+            Describe what you have in mind. Loom plans it, writes the code, and
+            weaves you a working preview you can keep shaping.
           </p>
 
           <div className="mt-6">
