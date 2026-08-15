@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import {
   Home,
@@ -36,16 +35,19 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
       <Link
         href="/"
         onClick={onNavigate}
-        className="mx-3 mt-4 flex items-center overflow-hidden rounded-xl border border-border bg-card px-3 py-2"
+        className="flex items-center gap-2.5 px-4 pt-5"
       >
-        <Image
-          src="/forge-logo.png"
-          alt="Forge"
-          width={480}
-          height={128}
-          priority
-          className="h-9 w-auto object-contain"
-        />
+        <span className="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-sm">
+          <LoomMark className="size-4" />
+        </span>
+        <span className="flex flex-col leading-tight">
+          <span className="font-display text-base font-semibold tracking-tight">
+            Loom
+          </span>
+          <span className="text-[11px] text-muted-foreground">
+            Weave ideas into apps
+          </span>
+        </span>
       </Link>
 
       {/* Search */}
@@ -202,7 +204,7 @@ export function AppShell({
               <LoomMark className="size-4" />
             </span>
             <span className="font-display text-base font-semibold tracking-tight">
-              Forge
+              Loom
             </span>
           </Link>
           {title && (
