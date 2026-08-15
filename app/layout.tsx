@@ -22,9 +22,9 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Loom — Build apps by describing them',
+  title: 'Forge — Build apps by describing them',
   description:
-    'Loom is the studio for building real applications from a single prompt. Describe it, watch it come to life, ship it.',
+    'Forge is the studio for building real applications from a single prompt. Describe it, watch it come to life, ship it.',
   generator: 'v0.app',
 }
 

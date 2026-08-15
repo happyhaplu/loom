@@ -28,7 +28,7 @@ const tiers = [
     features: [
       'Unlimited projects',
       'Custom domains',
-      'Remove Loom badge',
+      'Remove Forge badge',
       'Priority build queue',
       'Version history',
     ],

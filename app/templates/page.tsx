@@ -14,7 +14,7 @@ export default function TemplatesPage() {
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
             Start from a proven foundation. Every template is a real,
-            editable app — Loom just gives you a head start.
+            editable app — Forge just gives you a head start.
           </p>
         </div>
 
