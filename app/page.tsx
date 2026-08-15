@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ArrowRight, RotateCcw } from 'lucide-react'
 import { AppShell } from '@/components/app-shell'
 import { PromptComposer } from '@/components/prompt-composer'
@@ -108,6 +109,37 @@ export default function HomePage() {
           {projects.slice(0, 3).map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
+        </div>
+
+        {/* Featured build — a real brand shipped with Loom */}
+        <div className="mt-6 flex flex-col overflow-hidden rounded-2xl border border-border bg-card/60 sm:flex-row">
+          <div className="relative aspect-[16/5] w-full sm:aspect-auto sm:w-1/2">
+            <Image
+              src="/forge-logo.png"
+              alt="Forge — a brand identity designed and shipped with Loom"
+              fill
+              className="object-cover"
+              sizes="(max-width: 640px) 100vw, 50vw"
+            />
+          </div>
+          <div className="flex flex-col justify-center gap-2 p-6 sm:w-1/2">
+            <span className="text-[11px] font-medium uppercase tracking-wider text-primary">
+              Featured build
+            </span>
+            <h3 className="font-display text-lg font-semibold tracking-tight">
+              Forge brand site
+            </h3>
+            <p className="text-pretty text-sm text-muted-foreground">
+              From a single prompt to a full landing page — logo, copy, and code
+              woven together in one workspace.
+            </p>
+            <Link
+              href="/workspace"
+              className="mt-1 flex w-fit items-center gap-1 text-sm font-medium text-primary transition-opacity hover:opacity-80"
+            >
+              Open project <ArrowRight className="size-4" />
+            </Link>
+          </div>
         </div>
       </section>
     </AppShell>
